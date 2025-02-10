@@ -1,0 +1,1211 @@
+/* Mobile devices (landscape only) */
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+    /* styles here */
+
+
+}
+
+
+@font-face {
+    font-family: digital;
+    src:url('../fonts/digital-7-webfont.woff2') format('woff2'),
+        url('../fonts/digital-7-webfont.woff') format('woff'),
+        url("../fonts/digital-7.ttf") format('truetype');
+  } 
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* width: 98vmax;
+    height: 1vmax; */
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: rgb(170, 165, 121);
+    overflow: hidden;
+   
+}
+
+.main{
+    height: 45.8vmax;
+    width: 100vmax;
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+}
+
+.header{
+    border: 1px solid black;
+    background-color: aqua;
+    height: 3vmax;
+    width: 100vmax; 
+    position: absolute;
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+}
+
+#ins{
+    font-size: 2vw;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 1%;
+}
+
+#text{
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: blue;
+    /* padding: 1%; */
+}
+
+.footer{
+    position: absolute;
+    align-items: center;
+    top: 3vmax;
+    height: 42.8vmax;
+    width: 100%;
+    background-color: rgb(226, 239, 33);
+    overflow: hidden;
+}
+
+#experiment{
+    /* top: 8%; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: blueviolet;
+    /* border: 1px solid black; */
+    /* visibility: hidden; */
+    overflow: hidden;
+}
+
+#start{
+    position:absolute;
+    border-radius: 10%;
+    padding: 0.5%;
+    font-size: 1vw;
+    left: 90%;
+    top: 90%;
+    border: none;
+    background-color: rgb(0, 244, 16);
+    box-shadow: 1px 1px 0px 0.5px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#start:active{
+    scale: 0.9;
+    transition: all ease 0.1s;
+}
+
+
+
+
+/* ******************************************       Equipments   ************************************** */
+
+#startinglab{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    visibility: visible;    
+
+}
+
+#workingtable{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    visibility: visible;
+
+}
+
+#stp1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: all;
+    transition-duration: 1s;
+    animation: shaking;
+    animation-iteration-count: infinite;
+    animation-duration: 0s;
+    animation-timing-function:linear;
+
+}
+
+#machine{
+    position: absolute;
+    height: 20%;
+    width: 18%;
+    top: 70%;
+    left: 3%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#on{
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    color: white;
+    padding: 0.1%;
+    background-color: red;
+    border-radius: 10%;
+    font-size: 0.8vw;
+    transition: all;
+    transition-duration: 0.1s;
+
+}
+
+#on:active{
+    scale: 0.9;
+}
+
+#tare{
+    position: absolute;
+    top: 82%;
+    left: 16.5%;
+    color: rgb(0, 0, 0);
+    padding: 0.1%;
+    background-color: rgb(238, 245, 42);
+    border-radius: 10%;
+    font-size: 0.8vw;
+    /* box-shadow: none; */
+    transition: all;
+    transition-duration: 0.1s;
+
+}
+
+#tare:active{
+    scale: 0.9;
+}
+
+
+#reading{
+    position: absolute;
+    top: 79.5%;
+    /* left: 8.9%; */
+    right: 85.53%;
+    font-family: digital;
+    font-weight: 300;
+    color: rgb(138, 234, 3);
+    font-size: 2.3vw;
+    transition: all;
+    transition-duration: 1s;
+    opacity: 0%;
+    
+}
+
+#protien{
+    position: absolute;
+    height: 28%;
+    width: 9%;
+    top: 63%;
+    left: 30%;
+    /* visibility: hidden; */
+}
+
+#protiencap{
+    position: absolute;
+    height: 3%;
+    width: 5.7%;
+    top: 61.5%;
+    left: 31.6%;
+    transition: all;
+    transition-duration: 1s;
+
+}
+
+#spatula{
+    position: absolute;
+    height: 20%;
+    top: 83%;
+    left: 15%;
+    rotate: 30deg;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.eflask{
+    position: absolute;
+    height: 27%;
+    width: 8%;
+    top: 63%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#flask1{
+    left: 47%;
+}
+
+#flask2{
+    left: 57%;
+}
+
+#flask3{
+    left: 67%;
+}
+
+#flask4{
+    left: 77%;
+}
+
+#flask5{
+    left: 87%;
+}
+
+.sols{
+    position: absolute;
+    width: 7.9%;
+    height: 15.5%;
+    bottom: 10%;
+    transition: all;
+    transition-duration: 1s;
+    visibility: hidden;
+    opacity: 0%;
+}
+
+#sol1{
+    left: 47.05%;
+}
+
+#sol2{
+    left: 57%;
+}
+
+#sol3{
+    left: 67%;
+}
+
+#sol4{
+    left: 77%;
+}
+
+#sol5{
+    left: 87%;
+}
+
+
+.cork{
+    position: absolute;
+    height: 10%;
+    width: 5.9%;
+    top: 60%;
+    left: 48%;
+    transition: all;
+    transition-duration: 1s;
+    visibility: hidden;
+    opacity: 0%;
+}
+
+#cork2{
+    left: 58%;
+}
+
+#cork3{
+    left: 68%;
+}
+
+#cork4{
+    left: 78%;
+}
+
+#cork5{
+    left: 88%;
+}
+
+
+.sample{
+    position: absolute;
+    height: 6%;
+    top: 68.3%;
+    left: 32.2%;
+    rotate: -50deg;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#stp2{
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+}
+
+#phred,#phall{
+    position: absolute;
+    height: 28%;
+    width: 9.9%;
+    bottom: 12%;
+    left: 20.05%;
+    visibility: hidden;
+    transition: all;
+    opacity: 50%;
+    transition-duration: 1s;
+}
+
+/* #phall{
+    visibility: visible;
+} */
+
+#ph8,#ph6,#ph4_5,#ph4,#ph3{
+    position: absolute;
+    width: 10%;
+    height: 40%;
+    bottom: 12%;
+    left: 20%;
+    transition: all;
+    transition-duration: 1s;
+    
+}
+
+#ph4,#ph4_5,#ph6,#ph8{
+    visibility: hidden;
+    /* left: -50%; */
+}
+
+#phcap{
+    position: absolute;
+    height: 4%;
+    top: 47%;
+    left: 23.3%;
+    width: 3.6%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#fallingsolr,#fallingsolc{
+    position: absolute;
+    /* height: 64%; */
+    height: 0%;
+    width: 0.3%;
+    left: 50.8%;
+    top: 25%;
+    opacity: 50%;
+    transition: all;
+    transition-duration: 0.5s;
+    visibility: hidden;
+}
+
+#stp3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    visibility: visible;
+}
+
+#shaker{
+    position: absolute;
+    /* top: 45%;
+    left: 25%;
+    height: 50%;
+    width: 50%; */
+    height: 100%;
+    width: 100%;
+    transition: all;
+    transition-duration: 1s;
+
+}
+
+#shaker-plate{
+    position: absolute;
+    height: 20%;
+    width: 58%;
+    left: -100%;
+    /* left: 21%; */
+    top: 35%;
+    transition: all;
+    transition-duration: 1s;
+    
+}
+
+#shakermachine{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 45%;
+    left: -100%;
+    /* left: 25%; */
+    transition: all;
+    transition-duration: 1s;
+}
+
+#onoff{
+    position: absolute;
+    top: 45%;
+    left: 24.5%;
+    width: 7%;
+    height: 20%;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    font-weight: 700;
+    box-shadow: 1px 1px 0px 0px;
+    border-radius: 10%;
+    border: 1px solid black;
+    /* background-color: rgb(255, 255, 255); */
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(135, 135, 135));
+    /* background-image: radial-gradient(rgb(255, 215, 15),rgb(255, 122, 6)); */
+    /* border: none; */
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+#plus,#minus,#RPM,#mmswitch,#ssswitch,#shakerstart{
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    width: 5%;
+    height: 9%;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    box-shadow: 1px 1px 0px 0px;
+    border-radius: 10%;
+    border: 1px solid black;
+    background-color: rgb(255, 230, 0);
+    /* border: none; */
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+#minus{
+    top: 50%;
+}
+
+#shakerstart{
+    top: 67%;
+    left: 69%;
+    font-size: 1vw;
+    width: 8%;
+    height: 6%;
+    font-weight: 400;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+}
+
+#onoff:active,#plus:active,#minus:active,#RPM:active,#mmswitch:active,#ssswitch:active,#shakerstart:active{
+    scale: 0.9;
+}
+
+#screen{
+    position: absolute;
+    /* background-color: yellow; */
+    height: 15.5%;
+    width: 11.5%;
+    top: 47.7%;
+    left: 34%;
+    animation: blinking;
+    animation-duration: 0s;
+    animation-iteration-count: infinite;
+}
+
+#stext{
+    position: absolute;
+    font-size: 3.1vw;
+    font-weight: 300;
+    right: 1%;
+    top: 7%;
+    color: rgb(16, 247, 255);
+    font-family: digital;
+    transition: all;
+    transition-duration: 1s;
+    opacity: 0%;
+}
+
+#RPM,#mmswitch,#ssswitch{
+    top: 66%;
+    left: 37.5%;
+    width: 7%;
+    height: 8%;
+    font-weight: 500;
+    font-size: 1vw;
+    background-color: rgb(31, 253, 24);
+}
+
+#mmswitch{
+    left: 51%;
+    width: 5%;
+    height: 7%;
+}
+
+#ssswitch{
+    left: 59%;
+    width: 5%;
+    height: 7%;
+}
+
+#timer{
+    position: absolute;
+    height: 15.5%;
+    width: 15%;
+    top: 47.7%;
+    left: 50%;
+    background-color: black;
+}
+
+#digitbox{
+    position: absolute;
+    top: 14%;
+    right: 8%;
+    opacity: 0%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.digit1{
+    margin-right: 1px;
+    color: red;
+    font-size: 2.7vw;
+    font-family: digital;
+    font-weight: 100;
+    transition: all;
+    transition-duration: 1s;
+    
+}
+
+#min2{
+    animation: blinking;
+    animation-iteration-count: infinite;
+    animation-duration: 0s;
+}
+
+#sec2{
+    animation: blinking;
+    animation-iteration-count: infinite;
+    animation-duration: 0s;
+}
+
+#frontline{
+    position: absolute;
+    height: 14%;
+    width: 57.8%;
+    top: -50%;
+    /* top: 34%; */
+    left: 21%;
+    transition: all;
+    transition-duration: 1s;
+    visibility: hidden;
+}
+
+#backline{
+    position: absolute;
+    height: 5%;
+    width: 49.7%;
+    left: 24.5%;
+    top: -50%;
+    /* top: 35.5%; */
+    transition: all;
+    transition-duration: 1s;
+    visibility: hidden;
+
+}
+
+.pdishs{
+    position: absolute;
+    height: 7%;
+    width: 8%;
+    visibility: hidden;
+    top: 78%;
+    left: -100%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#pdish1{
+    position: absolute;
+    height: 7%;
+    width: 8%;
+    visibility: hidden;
+    top: 78%;
+    left: 22%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+
+.filters{
+    position: absolute;
+    visibility: hidden;    
+    height: 8%;
+    width: 10%;
+    top: 87%;
+    left: -100%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#filter1{
+    position: absolute;
+    visibility: hidden;    
+    height: 8%;
+    width: 10%;
+    top: 87%;
+    left: 21%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#neflask1{
+    position: absolute;
+    height: 27%;
+    width: 8%;
+    bottom: 10%;
+    /* left: 20%; */
+    left: -100%;
+    visibility: visible;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#nesol1{
+    position: absolute;
+    width: 7.9%;
+    height: 15.5%;
+    bottom: 10%;
+    left: -100%;
+    transition: all;
+    transition-duration: 1s;
+    visibility: visible;
+    opacity: 0%;
+}
+
+#funnel{
+    position: absolute;
+    visibility: visible;
+    height: 22%;
+    width: 8%;
+    top: 55.5%;
+    /* left: 19.9%; */
+    left: -100%;
+    transition: all;
+    transition-duration: 1s;
+
+}
+
+.im{
+    position: absolute;
+    visibility: hidden;
+    height: 5%;
+    width: 6.4%;
+    top: 56.6%;
+    left: 20.7%;
+    transition: all;
+    transition-duration: 1s;
+    opacity: 0%;
+}
+
+#lastbg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    visibility: visible;
+    transition: all;
+    transition-duration: 1s;
+    top: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************   TABLES   ****************************************** */
+
+/* #alltables{
+    background-color: aliceblue;
+} */
+
+#tbl1{
+    position: absolute;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    height:40%;
+    width: 55%;
+    top: 5%;
+    right: 2.5%;
+    transition: all;
+    transition-duration: 1s;
+    visibility: hidden;
+}
+
+td,th{
+    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: separate;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2vw;
+}
+
+td{
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+
+#ftext{
+    position: absolute;
+    font-size: 1.2vw;
+    top: 70%;
+    left: 15%;
+    transition: all;
+    transition-duration: 1s;
+    color: brown;
+    cursor: pointer;
+}
+
+
+
+#formula{
+    position: absolute;
+    /* height: 25%; */
+    height: 0%;
+    width: 35%;
+    top: 70%;
+    left: 35%;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+#solubility{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    transition: all;
+    transition-duration: 1s;
+    font-size: 1.2vw;
+}
+
+#solubilityinput{
+    position: absolute;
+    margin-left: 5%;
+    width: 60%;
+}
+
+#resulter{
+    position: absolute;
+    font-size: 1.1vw;
+    color: green;
+    top: 55%;
+    left: 55%;
+    visibility: hidden;
+}
+
+#checkbtn{
+    position: absolute;
+    height: 4%;
+    width: 4%;
+    background-color: rgb(187, 255, 0);
+    top: 54.5%;
+    left: 45%;
+    border-radius: 10%;
+    font-size: 1vw;
+
+}
+
+#resultbtn{
+    position: absolute;
+    height: 4%;
+    width: 4%;
+    background-color: rgb(0, 255, 234);
+    top: 54.5%;
+    left: 65%;
+    border-radius: 10%;
+    font-size: 1vw;
+    visibility: hidden;
+}
+
+#resultbtn:active,#checkbtn:active{
+    scale: 0.9;
+}
+
+#graph{
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    top: 5%;
+    right: 5%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#inference{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    background-color: white;
+    transition: all;
+    transition-duration: 1s;
+    text-align: center;
+
+}
+
+#iheader{
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 5%;
+}
+
+#itext{
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+#graph2{
+    position: absolute;
+    height: 40%;
+    width: 30%;
+    top: 25%;
+    right: 35%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+
+/* *********************************************  OVEN CSS   ************************************************* */
+
+
+#ovendiv{
+    position: absolute;
+    height: 80%;
+    width: 65%;
+    bottom: 6%;
+    left: 150%;
+    transition: all;
+    transition-duration: 1s;
+    visibility: visible;
+    font-family: digital;
+    /* display: flex; */
+}
+
+#gate{
+    position: absolute;
+    height: 70%;
+    width: 47%;
+    bottom: 10%;
+    /* left: 26%; */
+    /* left: 72%; */
+    left: 166%;
+    visibility: visible;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#oven{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+/* *******************************  OVEN DISPLAY   ****************************************** */
+#tempscreen{
+    transition: all;
+    transition-duration: 1s;
+    opacity: 0%;
+    color: orangered;
+}
+
+#temptext{
+    position: absolute;
+    font-size: 3vw;
+    top: 26%;
+    right: 85%;
+    font-weight: 100;
+    animation: blinking;
+    animation-duration: 1s;
+    animation-iteration-count: 0;
+}
+
+#celcius{
+    position: absolute;
+    font-size: 3vw;
+    right: 81%;
+    top: 26%;
+    font-weight: 100;
+}
+
+#timerscreen{
+    position: absolute;
+    display: flex;
+    color: rgb(47, 220, 255);
+    top: 34%;
+    font-size: 1.5vw;
+    right: 82%;
+    transition: all;
+    transition-duration: 1s;
+    opacity: 0%;
+}
+
+#hournew{
+    margin-right: 2%;
+    font-weight: 100;
+    animation: blinking;
+    animation-duration: 1s;
+    animation-iteration-count: 0;
+}
+
+#minutenew{
+    margin-right: 2%;
+    font-weight: 100;
+    animation: blinking;
+    animation-duration: 1s;
+    animation-iteration-count: 0;
+}
+
+#secondnew{
+    margin-right: 2%;
+    font-weight: 100;
+    animation: blinking;
+    animation-duration: 1s;
+    animation-iteration-count: 0;
+}
+
+#colon1st{
+    margin-right: 2%;
+    font-weight: 100;
+}
+
+#colon2nd{  
+    margin-right: 2%;
+    font-weight: 100;
+}
+
+
+#onoffbtntext{
+    position: absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    top: 86%;
+    left: 4.6%;
+    color: rgb(36, 36, 36);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#onoffbtn{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    width: 5%;
+    height: 5%;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    font-weight: 700;
+    box-shadow: 1px 1px 0px 0px;
+    border-radius: 10%;
+    border: 1px solid black;
+    /* background-color: rgb(255, 255, 255); */
+    background-image: radial-gradient(rgb(226, 226, 226),rgb(135, 124, 124));
+    /* background-image: radial-gradient(rgb(255, 215, 15),rgb(255, 122, 6)); */
+    /* border: none; */
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+#plusbtn,#minusbtn,#tempbtn,#hourbtn,#minutebtn,#secondbtn{
+    position: absolute;
+    top: 45%;
+    left: 3.5%;
+    width: 4%;
+    height: 4%;
+    border-radius: 5px;
+    font-size: 0.9vw;
+    font-weight: 100;
+    box-shadow: 1px 1px 0px 0px;
+    border-radius: 10%;
+    border: 1px solid black;
+    background-color: rgb(0, 251, 255);
+    /* border: none; */
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+#minutebtn{
+    left: 9.5%;
+}
+
+#secondbtn{
+    left: 15%;
+}
+
+#tempbtn{
+    left: 5%;
+    top: 62%;
+    height: 4.5%;
+    width: 4.5%;
+    font-size: 0.7vw;
+    background-color: orangered;
+    color: white;
+}
+
+#plusbtn{
+    left: 13%;
+    top: 55%;
+    font-size: 1vw;
+    background-color: rgb(4, 255, 0);
+}
+
+#minusbtn{
+    left: 13%;
+    top: 69%;
+    font-size: 1vw;
+    background-color: rgb(4, 255, 0);
+}
+
+#plusbtn:active,#minusbtn:active,#tempbtn:active,#hourbtn:active,#minutebtn:active,#secondbtn:active,#onoffbtn:active{
+    scale: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes blinking{
+    0%{opacity: 0%;}
+    50%{opacity: 100%;}
+    100%{opacity: 0%;}
+
+}
+
+@keyframes shaking{
+    0%{top: 0%;
+       left: 0%;}
+
+    12.5%{left: 1.5%;
+        top: 0.7%;}
+    
+    25%{left: 3%;
+        top: 1.5%;}
+
+    37.2%{left: 1.5%;
+        top: 2.25%;}
+    
+    50%{top: 3%;
+        left: 0%;}
+
+    62.5%{top: 2.25%;
+        left: -1.5%;}
+    
+    75%{top: 1.5%;
+        left: -3%;}
+
+    87.2%{top: 0.7%;
+        left: -1.5%;}
+
+    100%{top: 0%;
+        left: 0%;}
+    
+}
+
+@keyframes shaking1{
+    0%{top: 0%;
+       left: 0%;}
+
+    12.5%{left: 1.5%;
+        top: 0.7%;}
+    
+    25%{left: 3%;
+        top: 1.5%;}
+
+    37.2%{left: 1.5%;
+        top: 2.25%;}
+    
+    50%{top: 3%;
+        left: 0%;}
+
+    62.5%{top: 2.25%;
+        left: -1.5%;}
+    
+    75%{top: 1.5%;
+        left: -3%;}
+
+    87.2%{top: 1.5%;
+        left: -1.5%;}
+
+    100%{top: 0%;
+        left: 0%;}
+    
+}
+
