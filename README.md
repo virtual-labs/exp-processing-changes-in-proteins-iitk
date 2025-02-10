@@ -4,7 +4,7 @@
 <b>Discipline | <b>Food Technology
 :--|:--|
 <b> Lab | <b> FOOD CHEMISTRY LAB
-<b> Experiment|     <b> 
+<b> Experiment|     <b> Study of some processing changes in proteins
 
 ### About the Experiment 
 
