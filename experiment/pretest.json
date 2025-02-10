@@ -2,12 +2,46 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. Which of the following factors primarily influences protein solubility?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Temperature",
+        "b": "pH",
+        "c": "Ionic strength",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. What happens to the solubility of a protein at its isoelectric point?",
+      "answers": {
+        "a": "It increases",
+        "b": "It decreases",
+        "c": "It remains constant",
+        "d": "It becomes unstable"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. What is the purpose of shaking the conical flasks during the experiment?",
+      "answers": {
+        "a": "To mix the protein solution uniformly",
+        "b": "To increase the solubility of the protein",
+        "c": "To help filter the solution",
+        "d": "To precipitate the protein"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +53,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "4. What is the role of buffer solutions in this experiment?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To control the temperature",
+        "b": "To adjust the pH of the protein solution",
+        "c": "To dissolve the protein",
+        "d": "To separate the protein from the filter paper"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -32,7 +66,24 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. What will be the expected result of this experiment?",
+      "answers": {
+        "a": "A curve showing solubility (%) against pH",
+        "b": "A color change indicating protein breakdown",
+        "c": "A fixed solubility percentage across all pH values",
+        "d": "No change in protein solubility"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

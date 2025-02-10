@@ -1,1 +1,1 @@
-### Aim of the experiment
+Study of some processing changes in proteins 
