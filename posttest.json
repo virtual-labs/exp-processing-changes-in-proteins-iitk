@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. At which pH value was the solubility of the protein powder lowest?",
+      "answers": {
+        "a": "pH 3.0",
+        "b": "pH 4.0",
+        "c": "pH 4.5",
+        "d": "pH 6.0"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which of the following best describes the insoluble matter (IM) in the experiment?",
+      "answers": {
+        "a": "Soluble proteins",
+        "b": "Precipitated proteins",
+        "c": "Buffer solution",
+        "d": "Filter paper residue"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. What is the significance of the solubility curve obtained in the experiment?",
+      "answers": {
+        "a": "It shows the optimal pH for protein extraction",
+        "b": "It identifies the temperature range for protein solubility",
+        "c": "It demonstrates the relationship between pH and protein solubility",
+        "d": "It shows the rate of protein degradation"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. What would likely happen if the pH of the buffer solution were adjusted to the protein's isoelectric point?",
+      "answers": {
+        "a": "Protein would remain highly soluble",
+        "b": "Protein would precipitate and become insoluble",
+        "c": "Protein would degrade into smaller peptides",
+        "d": "There would be no change in solubility"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. What is the purpose of drying the filter paper and protein in the oven?",
+      "answers": {
+        "a": "To completely dissolve the protein",
+        "b": "To remove the moisture content and measure the dry weight of insoluble matter",
+        "c": "To sterilize the protein sample",
+        "d": "To convert the insoluble matter into a soluble form"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}

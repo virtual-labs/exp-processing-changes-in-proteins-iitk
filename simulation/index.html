@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study of some processing changes in proteins</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+  <main class="main">
+    <div class="header" id="header">
+      <h1 id="ins">Instructions :-</h1>
+      <h1 id="text"> Press start button to start the experiment .</h1>
+    </div>
+
+    <div class="footer">
+      <div id="experiment">
+        <img id="workingtable" src="images/bgAsset.png" alt="">
+
+        <div id="stp3">
+
+          <div id="shakermachine">         <!------------------------------ flask shaker machine ------------------------------->>
+
+            <img id="shaker" src="images/flask shaker.png" alt="">
+
+            <button id="onoff" onclick="onoff1()"></button>
+            <button id="plus" onclick="plus1()">+</button>
+            <button id="minus" onclick="minus1()">-</button>
+            <button id="shakerstart" onclick="shakerstart1()">START</button>
+            <button id="RPM" onclick="rpm1()">RPM</button>
+            <button id="mmswitch" onclick="mm1()">MM</button>
+            <button id="ssswitch" onclick="ss1()">SS</button>
+
+            <div id="screen">
+              <h1 id="stext">000</h1>
+            </div>
+
+            <div id="timer">
+              <div id="digitbox">
+                <span class="digit1" id="min2">00</span> 
+                <span class="digit1" id="collon2">:</span> 
+                <span class="digit1" id="sec2"> 00</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- <img id="shaker-plate" src="images/flask shaker-plate.png" alt=""> -->
+
+        </div>
+
+        <!-- -------------------------------------   STEP 2   ------------------------------------- -->
+
+        <div id="stp2">
+          <img id="phred" src="images/PH - buffer - solutions-red.png" alt="">
+          <img id="phall" src="images/PH - buffer - solutions-colorless.png" alt="">
+          <img id="ph8" onclick="bufferpour()" src="images/PH - buffer - solutions-8.png" alt="">
+          <img id="ph6" onclick="bufferpour()" src="images/PH - buffer - solutions-6.png" alt="">
+          <img id="ph4_5" onclick="bufferpour()" src="images/PH - buffer - solutions-4.5.png" alt="">
+          <img id="ph4" onclick="bufferpour()" src="images/PH - buffer - solutions-4.0.png" alt="">
+          <img id="ph3" onclick="bufferpour()" src="images/PH - buffer - solutions-3.0.png" alt="">
+          <img id="phcap" src="images/PH - buffer - solutions-cap.png" alt="">
+          <img id="fallingsolc" src="images/PH - buffer - solutions-colorless.png" alt="">
+          <img id="fallingsolr" src="images/PH - buffer - solutions-red.png" alt="">
+        </div>
+
+
+        <!-- ---------------------------------------    STEP 1   ---------------------------------------- -->
+
+        <div id="stp1">
+
+          <img id="machine" src="images/wheighing-machine.png" alt="">
+          <img id="spatula" onclick="spatula1()" src="images/spatula.png" alt="">
+
+          <div id="ovendiv">
+
+            <img id="oven" src="images/oven.png" alt="">
+
+            <div id="tempscreen">
+              <h1 id="temptext">00</h1>
+              <h1 id="celcius">C</h1>
+            </div>
+            <div id="timerscreen">
+              <h1 id="hournew">00</h1>
+              <h1 id="colon1st">:</h1>
+              <h1 id="minutenew">00</h1>
+              <h1 id="colon2nd">:</h1>
+              <h1 id="secondnew">00</h1>
+            </div>
+
+
+            <button id="plusbtn" onclick="plusnew1()">+</button>
+            <button id="minusbtn" onclick="minusnew1()">-</button>
+            <button id="tempbtn" onclick="tempnew1()">TEMP</button>
+            <button id="hourbtn" onclick="hournew1()">HH</button>
+            <button id="minutebtn" onclick="minutenew1()">MM</button>
+            <button id="secondbtn" onclick="secondnew1()">SS</button>
+
+            <button id="onoffbtn" onclick="onoffnew1()"></button>
+            <h1 id="onoffbtntext">On/Off</h1>
+
+          </div>
+          
+          <img class="pdishs" id="pdish1" onclick="petri()" src="images/petri-dish.png" alt="">
+          <img class="pdishs" id="pdish2" onclick="petri()" src="images/petri-dish.png" alt="">
+          <img class="pdishs" id="pdish3" onclick="petri()" src="images/petri-dish.png" alt="">
+          <img class="pdishs" id="pdish4" onclick="petri()" src="images/petri-dish.png" alt="">
+          <img class="pdishs" id="pdish5" onclick="petri()" src="images/petri-dish.png" alt="">
+
+
+          <img class="filters" id="filter1" onclick="filter()" src="images/filter-paper.png" alt="">
+          <img class="filters" id="filter2" onclick="filter()" src="images/filter-paper.png" alt="">
+          <img class="filters" id="filter3" onclick="filter()" src="images/filter-paper.png" alt="">
+          <img class="filters" id="filter4" onclick="filter()" src="images/filter-paper.png" alt="">
+          <img class="filters" id="filter5" onclick="filter()" src="images/filter-paper.png" alt="">
+
+
+          <div id="cflasks">
+            <img id="shaker-plate" src="images/flask shaker-plate.png" alt="">
+
+            <img class="cork" id="cork1" src="images/cork.png" alt="">
+            <img class="cork" id="cork2" src="images/cork.png" alt="">
+            <img class="cork" id="cork3" src="images/cork.png" alt="">
+            <img class="cork" id="cork4" src="images/cork.png" alt="">
+            <img class="cork" id="cork5" src="images/cork.png" alt="">
+
+            <img class="sample" id="sample1" src="images/protien sample2.png" alt="">
+            <img class="sample" id="sample2" src="images/protien sample2.png" alt="">
+            <img class="sample" id="sample3" src="images/protien sample2.png" alt="">
+            <img class="sample" id="sample4" src="images/protien sample2.png" alt="">
+            <img class="sample" id="sample5" src="images/protien sample2.png" alt="">
+
+            <img id="backline" src="images/flask shaker-back line.png" alt="">
+
+            <img class="sols" id="sol1" src="images/conical-flask - 100ml-solution colourless.png" alt="">
+            <img class="sols" id="sol2" src="images/conical-flask - 100ml-solution red.png" alt="">
+            <img class="sols" id="sol3" src="images/conical-flask - 100ml-solution colourless.png" alt="">
+            <img class="sols" id="sol4" src="images/conical-flask - 100ml-solution colourless.png" alt="">
+            <img class="sols" id="sol5" src="images/conical-flask - 100ml-solution colourless.png" alt="">
+
+            <img class="eflask" id="flask1" onclick="flaskplace1()" src="images/conical-flask - 100ml.png" alt="">
+            <img class="eflask" id="flask2" onclick="flaskplace2()" src="images/conical-flask - 100ml.png" alt="">
+            <img class="eflask" id="flask3" onclick="flaskplace3()" src="images/conical-flask - 100ml.png" alt="">
+            <img class="eflask" id="flask4" onclick="flaskplace4()" src="images/conical-flask - 100ml.png" alt="">
+            <img class="eflask" id="flask5" onclick="flaskplace5()" src="images/conical-flask - 100ml.png" alt="">
+
+            <img id="frontline" src="images/flask shaker-front line.png" alt="">
+
+          </div>
+
+
+          <img id="protien" src="images/whey-protien-main.png" alt="">
+          <img id="protiencap" onclick="cap1()" src="images/whey-protien-cap.png" alt="">
+          <button id="on" onclick="on1()">ON</button>
+          <button id="tare" onclick="tare1()">TARE</button>
+          <h3 id="reading">00.00</h3>
+
+
+          <img id="funnel" onclick="funnel1()" src="images/funnel.png" alt="">
+          <img class="im" id="im1" onclick="imselect1()" src="images/insoluble-matter.png" alt="">
+          <img class="im" id="im2" onclick="imselect2()" src="images/insoluble-matter.png" alt="">
+          <img class="im" id="im3" onclick="imselect3()" src="images/insoluble-matter.png" alt="">
+          <img class="im" id="im4" onclick="imselect4()" src="images/insoluble-matter.png" alt="">
+          <img class="im" id="im5" onclick="imselect5()" src="images/insoluble-matter.png" alt="">
+          <img id="nesol1" src="images/conical-flask - 100ml-solution colourless.png" alt="">
+          <img id="neflask1" src="images/conical-flask - 100ml.png" alt="">
+
+          <img id="gate" onclick="door()" src="images/gate.png" alt="">
+
+        </div>
+
+
+        <!-- ---------------------------------    TABLE    -------------------------------------------- -->
+        <div id="lastbg">
+          <img id="graph" src="images/graph-new.PNG" alt="">
+          <h3 id="solubility">Solubility (S,%) = <input type="number" maxlength="2" max="99" min="0" step="1.0" id="solubilityinput" style="color:blue" placeholder="Sample A"></h3>
+          <button id="checkbtn" onclick="checker()">Check</button>
+          <button id="resultbtn" onclick="result()">Result</button>
+          <h3 id="resulter">Right answer</h3>
+          <h1 id="ftext" onclick="fhider()">Click me to show formula</h1>
+          <img id="formula" src="images/formula.PNG" alt="">
+
+        </div>
+
+        <div id="alltables">
+
+          <table id="tbl1">
+            <tr>
+              <th>Sample</th>
+              <th>S (g)</th>
+              <th>P (g)</th>
+              <th>F (g)</th>
+              <th>P+F+IM (g) <br> (before drying)</th>
+              <th>P+F+IM (g) <br> (after drying)</th>
+              <th>IM (after drying)</th>
+              <th>s (%)</th>
+            </tr>
+            <tr>
+              <td>A (pH 3.0)</td>
+              <td>10.00</td>
+              <td id="p1"></td>
+              <td id="f1"></td>
+              <td id="pfim1"></td>
+              <td id="pfimnew1"></td>
+              <td id="oim1"></td>
+              <td id="s1"></td>
+            </tr>
+            <tr>
+              <td>B (pH 4.0)</td>
+              <td>10.00</td>
+              <td id="p2"></td>
+              <td id="f2"></td>
+              <td id="pfim2"></td>
+              <td id="pfimnew2"></td>
+              <td id="oim2"></td>
+              <td id="s2"></td>
+            </tr>
+            <tr>
+              <td>C (pH 4.5)</td>
+              <td>10.00</td>
+              <td id="p3"></td>
+              <td id="f3"></td>
+              <td id="pfim3"></td>
+              <td id="pfimnew3"></td>
+              <td id="oim3"></td>
+              <td id="s3"></td>
+            </tr>
+            <tr>
+              <td>D (pH 6.0)</td>
+              <td>10.00</td>
+              <td id="p4"></td>
+              <td id="f4"></td>
+              <td id="pfim4"></td>
+              <td id="pfimnew4"></td>
+              <td id="oim4"></td>
+              <td id="s4"></td>
+            </tr>
+            <tr>
+              <td>E (pH 8.0)</td>
+              <td>10.00</td>
+              <td id="p5"></td>
+              <td id="f5"></td>
+              <td id="pfim5"></td>
+              <td id="pfimnew5"></td>
+              <td id="oim5"></td>
+              <td id="s5"></td>
+            </tr>
+          </table>
+          
+        </div>
+
+        <div id="inference">
+          <h1 id="iheader"> Inference</h1>
+          <img id="graph2" src="images/graph-new.PNG" alt="">
+          <h3 id="itext">The curve indicated that the solubility of protein affected by pH and it was minimum at pH 4.5, which is the isoelectric pH of the protein powder. </h3>
+        </div>
+
+
+
+
+
+        <button id="start" onclick="start()" >START</button>
+      </div>
+    </div>
+  </main>
+  <script src="script/project.js"></script>
+  <script src="script/step1.js"></script>
+  <script src="script/step2.js"></script>
+  <script src="script/step3.js"></script>
+  <script src="script/step4.js"></script> 
+  <script src="script/step5.js"></script>
+  <script src="script/step6.js"></script>  
+  <script src="script/step7.js"></script>
+  <script src="script/step8.js"></script>
+  <script src="script/stopwatch.js"></script>
+  <script src="script/stopwatch2.js"></script>
+  <script src="script/bypass.js"></script>
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>
