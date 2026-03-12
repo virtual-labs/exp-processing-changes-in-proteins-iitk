@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. Which of the following factors primarily influences protein solubility?",
+      "question": "1.Which factor has the most significant effect on protein solubility near its isoelectric point?",
       "answers": {
         "a": "Temperature",
         "b": "pH",
-        "c": "Ionic strength",
-        "d": "All of the above"
+        "c": "Light exposure",
+        "d": "Mechanical agitation"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,7 +15,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
